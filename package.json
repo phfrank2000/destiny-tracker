@@ -1,0 +1,74 @@
+{
+    "name": "destiny-grimoire-tracker",
+    "version": "0.0.0",
+    "private": true,
+    "homepage": ".",
+    "engines": {
+        "node": "^18.0.0"
+    },
+    "dependencies": {
+        "@atlaskit/button": "17.4.0",
+        "@atlaskit/dynamic-table": "14.14.0",
+        "@atlaskit/form": "9.0.7",
+        "@atlaskit/icon": "22.1.0",
+        "@atlaskit/image": "1.1.6",
+        "@atlaskit/section-message": "6.4.19",
+        "@atlaskit/select": "17.1.2",
+        "@atlaskit/tabs": "14.0.3",
+        "@atlaskit/textfield": "6.0.1",
+        "@atlaskit/theme": "12.6.4",
+        "@material-ui/core": "4.12.4",
+        "he": "1.2.0",
+        "node-fetch": "2.7.0",
+        "react": "16.14.0",
+        "react-dom": "16.14.0",
+        "ts-node": "10.9.2",
+        "uuid": "9.0.1"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+        "@types/he": "1.2.3",
+        "@types/node": "20.11.19",
+        "@types/node-fetch": "2.6.9",
+        "@types/react": "17.0.73",
+        "@types/react-dom": "17.0.25",
+        "@types/uuid": "9.0.8",
+        "@typescript-eslint/eslint-plugin": "^6.15.0",
+        "@typescript-eslint/parser": "^6.15.0",
+        "cross-env": "7.0.3",
+        "eslint": "8.56.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.1.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.29.0",
+        "eslint-plugin-jest": "^27.6.0",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-no-secrets": "^0.8.9",
+        "eslint-plugin-prettier": "^5.0.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-security": "^1.7.1",
+        "prettier": "3.2.5",
+        "react-scripts": "5.0.1",
+        "typescript": "4.9.5"
+    },
+    "scripts": {
+        "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+        "lint": "eslint --max-warnings=0 src/",
+        "start": "cross-env GENERATE_SOURCEMAP=false react-scripts start"
+    },
+    "browserslist": {
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ],
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ]
+    }
+}
