@@ -96,6 +96,7 @@
                 "assertFunctionNames": ["*expect*", "*assert*"]
             }
         ],
-        "no-debugger": "warn"
+        "no-debugger": "warn",
+        "promise/catch-or-return": "off"
     }
 }
