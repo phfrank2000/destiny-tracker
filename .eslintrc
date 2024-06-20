@@ -1,0 +1,101 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:eslint-comments/recommended",
+        "plugin:promise/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:security/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": ".",
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier",
+        "import",
+        "promise",
+        "jest",
+        "security",
+        "no-secrets"
+    ],
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        },
+        "react": {
+            "version": "16.14.0"
+        }
+    },
+    "rules": {
+        "prettier/prettier": ["warn"],
+        "no-secrets/no-secrets": "error",
+        "import/no-unresolved": "error",
+        "@typescript-eslint/adjacent-overload-signatures": "warn",
+        "@typescript-eslint/array-type": [
+            "error",
+            { "default": "array-simple" }
+        ],
+        "@typescript-eslint/ban-tslint-comment": "error",
+        "@typescript-eslint/class-literal-property-style": "error",
+        "@typescript-eslint/prefer-optional-chain": "error",
+        "import/prefer-default-export": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "@typescript-eslint/prefer-regexp-exec": "off",
+        "security/detect-object-injection": "off",
+        "promise/always-return": "off",
+        "no-console": [
+            "warn",
+            {
+                "allow": ["info", "warn", "error"]
+            }
+        ],
+        "react/jsx-filename-extension": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "no-restricted-syntax": "off",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                "checksVoidReturn": false
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "jest/expect-expect": [
+            "warn",
+            {
+                "assertFunctionNames": ["*expect*", "*assert*"]
+            }
+        ],
+        "no-debugger": "warn"
+    }
+}
